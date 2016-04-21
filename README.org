@@ -1,0 +1,13 @@
+* Installation
+  Ouvrez un terminal texte et tapez:
+  #+BEGIN_SRC sh
+  git clone https://github.com/bereziat/2I012-emacs.git .emacs.d=
+  #+END_SRC
+  Lancez =emacs= une première fois, patientez et terminez
+  l'application. Au second lancement d'=emacs=, il est prêt à l'emploi.
+
+* Aperçu de la configuration
+** Auto-complétion
+** Vérification syntaxique à la volée
+** /Speedbar/
+
