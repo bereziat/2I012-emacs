@@ -1,13 +1,54 @@
+* Introduction
+  Ce dépôt github fourni une configuration =emacs= recommandée par
+  l'équipe enseignante de 2I-012, environnement de développement, de
+  la licence d'informatique de l'UPMC. La configuration d'un éditeur
+  est aussi une affaire de goût, nous vous invitons à supprimer dans
+  le fichier =init.el= les fonctionnalités qui ne vous plaisent
+  pas. Pour en ajouter d'autres, vous pouvez parcourir la liste des
+  paquets disponibles (faire =M-x list-package= dans =emacs= et
+  appuyer sur =?= pour les paquets qui vous intéressent) ou consultez
+  des sites dédiés (voir dernière section).
+
 * Installation
   Ouvrez un terminal texte et tapez:
   #+BEGIN_SRC sh
   git clone https://github.com/bereziat/2I012-emacs.git .emacs.d=
   #+END_SRC
-  Lancez =emacs= une première fois, patientez et terminez
-  l'application. Au second lancement d'=emacs=, il est prêt à l'emploi.
+  Lancez =emacs= une première fois, patientez (=emacs= télécharge et
+  installe les paquets dont il a besoin) et terminez l'application. Au
+  second lancement d'=emacs=, ce dernier est prêt à l'emploi.
 
 * Aperçu de la configuration
 ** Auto-complétion
-** Vérification syntaxique à la volée
-** /Speedbar/
+   Elle est fourni par le paquet [[http://company-mode.github.io/][company]]. Pour les codes C et C++, =emacs= utilise
+   =clang= (installé à la PPTI). =emacs= est configuré pour =python3=. D'autres
+   modes majeurs sont supportés, nous vous renvoyons à la documentation du
+   paquet.
 
+** Vérification syntaxique à la volée
+   Elle est fourni par le paquet [[http://www.flycheck.org/en/latest/][flycheck]]. Un grand nombre de language
+   sont supportés mais la plupart nécessite l'installation d'un
+   logiciel tiers (par exemple =pylint= pour python): consultez la
+   [[http://www.flycheck.org/en/latest/languages.html#flycheck-languages][documentation]].
+   
+** Repliement/dépliement (/folding/)
+   Les parties structurées et les commentaires d'un code source
+   peuvent être affiché/masqué dans =emacs= à l'aide du mode mineur
+   =hs-minor-mode=. En complément, et grâce au paquet [[http://melpa.org/#/hideshowvis][hideshowvis]], les
+   zones où l'on controle les repliements sont indiquées dans la
+   /fringe/ c'est-à-dire la colonne grise à gauche d'un tampon: on
+   peut afficher/masquer en cliquant sur ces symboles. De plus, nous
+   avons associé le raccourci clavier =<backtab>= c'est-à-dire la
+   touche =TAB= combinée avec la touche =shift= pour
+   afficher/masquer/.
+
+** Tabulation intelligente
+   En fonction de la position du curseur la touche =TAB= insèrera une
+   tabulation ou une complétion du mot situé à gauche du curseur
+   (paquet [[https://www.emacswiki.org/emacs/TabCompletion#toc2][smart-tab]]).
+
+** /Speedbar/
+   a faire
+
+* Voir aussi
+  a faire
