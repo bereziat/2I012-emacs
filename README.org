@@ -12,7 +12,7 @@
 * Installation
   Ouvrez un terminal texte et tapez:
   #+BEGIN_SRC sh
-  git clone https://github.com/bereziat/2I012-emacs.git .emacs.d=
+  git clone https://github.com/bereziat/2I012-emacs.git .emacs.d
   #+END_SRC
   Lancez =emacs= une première fois, patientez (=emacs= télécharge et
   installe les paquets dont il a besoin) et terminez l'application. Au
@@ -36,7 +36,7 @@
    peuvent être affiché/masqué dans =emacs= à l'aide du mode mineur
    =hs-minor-mode=. En complément, et grâce au paquet [[http://melpa.org/#/hideshowvis][hideshowvis]], les
    zones où l'on controle les repliements sont indiquées dans la
-   /fringe/ c'est-à-dire la colonne grise à gauche d'un tampon: on
+   /fringe/ c'est-à-dire la colonne grise à gauche d'une /frame/: on
    peut afficher/masquer en cliquant sur ces symboles. De plus, nous
    avons associé le raccourci clavier =<backtab>= c'est-à-dire la
    touche =TAB= combinée avec la touche =shift= pour
@@ -48,7 +48,12 @@
    (paquet [[https://www.emacswiki.org/emacs/TabCompletion#toc2][smart-tab]]).
 
 ** /Speedbar/
-   a faire
+   Nous avons configuré =emacs= de façon à faire apparaître dans une
+   /frame/ à gauche la /speedbar/. Cette dernière affiche le contenu
+   du répertoire courant, et pour certains fichiers (par exemple C ou
+   python), on peut lister les fonctions qui y sont contenu et y
+   accéder directement.
 
 * Voir aussi
-  a faire
+  - [[http://emacs.sexy/][Emacs is sexy]]: présentation /sexy/ d'emacs
+  - [[https://github.com/emacs-tw/awesome-emacs][Awesome Emacs]]: une liste de paquets emacs très utiles

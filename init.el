@@ -29,18 +29,19 @@
   :config
   (global-company-mode))
 
-;; check syntax on the fly
+;; vérification syntaxique à la volée
 (use-package flycheck
   :ensure t
   :init
   (global-flycheck-mode)
   (setq flycheck-indication-mode nil))
 
-;; make hideshow a global minor mode for all programming mode
+;; dépliement/repliement des fonctions et commentaires
+;; dans les modes de programmation
 (use-package hideshow
   :init (add-hook 'prog-mode-hook 'hs-minor-mode))
 
-;; display fold symbols in fringe !
+;; affichage du symbole de dépliement/repliement dans la marge
 (use-package hideshowvis
   :ensure t
   :init
@@ -48,13 +49,13 @@
   (hideshowvis-symbols)
   :bind (("<backtab>" . hs-toggle-hiding)))
 
-;; smart tab: decides the best between completion and tabulation if
-;; TAB is pressed
+;; touche TAB intelligente: décide entre la complétion et la
+;; tabulation
 (use-package smart-tab
   :init (global-smart-tab-mode)
   :ensure t)
 
-;;
+;; speedbar dans emacs
 (use-package sr-speedbar
   :ensure t
   :init
