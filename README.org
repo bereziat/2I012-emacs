@@ -19,6 +19,8 @@
   second lancement d'=emacs=, ce dernier est prêt à l'emploi.
 
 * Aperçu de la configuration
+  La configuration repose sur le paquet [[https://github.com/jwiegley/use-package/][use-package]] qui
+  facilite grandement la gestion des extensions.
 ** Auto-complétion
    Elle est fourni par le paquet [[http://company-mode.github.io/][company]]. Pour les codes C et C++, =emacs= utilise
    =clang= (installé à la PPTI). =emacs= est configuré pour =python3=. D'autres
