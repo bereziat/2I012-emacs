@@ -17,6 +17,8 @@
   Lancez =emacs= une première fois, patientez (=emacs= télécharge et
   installe les paquets dont il a besoin) et terminez l'application. Au
   second lancement d'=emacs=, ce dernier est prêt à l'emploi.
+  Il se peut qu'un paquet ne soit pas correctement téléchargé (problème 
+  réseau), n'hésitez pas à relancer =emacs= pour terminer l'installation.
 
 * Aperçu de la configuration
   La configuration repose sur le paquet [[https://github.com/jwiegley/use-package/][use-package]] qui
@@ -57,7 +59,8 @@
    accéder directement.
 
 * Voir aussi
-  - [[http://emacs.sexy/][Emacs is sexy]]: présentation /sexy/ d'emacs
-  - [[https://github.com/emacs-tw/awesome-emacs][Awesome Emacs]]: une liste de paquets emacs très utiles
-  - [[http://emacsrocks.com/][Emacs rocks]]: une série de vidéos (en anglais) montrant les capacités d'emacs
-  - [[http://pragmaticemacs.com/][Pragmatic Emacs]]: série d'articles (en anglais) pour l'utilisation au quotidien d'emacs
+  - [[http://frougon.net/writings/emacs-tut/index.html][À la découverte de GNU Emacs]]: tutoriel assez complet
+  - [[http://emacs.sexy/][Emacs is sexy]]: présentation /sexy/ d'=emacs=
+  - [[https://github.com/emacs-tw/awesome-emacs][Awesome Emacs]]: une liste de paquets =emacs= très utiles
+  - [[http://emacsrocks.com/][Emacs rocks]]: une série de vidéos (en anglais) montrant les capacités d'=emacs=
+  - [[http://pragmaticemacs.com/][Pragmatic Emacs]]: série d'articles pour l'utilisation au quotidien d'=emacs=
