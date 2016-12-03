@@ -1,6 +1,6 @@
 * Introduction
   Ce dépôt github fourni une configuration =emacs= recommandée par
-  l'équipe enseignante de 2I-012, environnement de développement, de
+  l'équipe enseignante de =2I012=, environnement de développement, de
   la licence d'informatique de l'UPMC. La configuration d'un éditeur
   est aussi une affaire de goût, nous vous invitons à supprimer dans
   le fichier =init.el= les fonctionnalités qui ne vous plaisent
@@ -12,6 +12,7 @@
 * Installation
   Ouvrez un terminal texte et tapez:
   #+BEGIN_SRC sh
+  cd
   git clone https://github.com/bereziat/2I012-emacs.git .emacs.d
   #+END_SRC
   Lancez =emacs= une première fois, patientez (=emacs= télécharge et
