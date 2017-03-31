@@ -19,6 +19,7 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
+
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Paquets essentiels ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;
@@ -59,10 +60,12 @@
 (use-package sr-speedbar
   :ensure t
   :init
+  :disabled t
   (setq sr-speedbar-width 20
 	sr-speedbar-max-width 20
 	sr-speedbar-right-side nil)
   (sr-speedbar-open))
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Quelques réglages essentiels  ;;
@@ -91,4 +94,22 @@
 ;; utiliser python3 comme interpréteur
 (setq python-shell-interpreter "python3")
 
+
+;; ediff-control dans la fenetre source
+(setq ediff-window-setup-function 'ediff-setup-windows-plain)
+
 ;;; init.el ends here
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (sr-speedbar smart-tab hideshowvis flycheck company use-package))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
