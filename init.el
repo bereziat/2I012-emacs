@@ -19,6 +19,9 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
+;; installations locales
+(add-to-list 'load-path "~/.emacs.d/site-lisp")
+
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Paquets essentiels ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;
