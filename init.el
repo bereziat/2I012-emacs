@@ -94,4 +94,9 @@
 ;; utiliser python3 comme interpréteur
 (setq python-shell-interpreter "python3")
 
+;; mettre les variables de l'interface customize dans un fichier à part
+(setq custom-file (expand-file-name "~/.emacs.d/customize.el"))
+(shell-command "touch ~/.emacs.d/customize.el")
+(load custom-file)
+
 ;;; init.el ends here
